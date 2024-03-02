@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
     $("header button").click(function(){
-        $("form").slideDown();
+        $("form").slideToggle(100);
     });
 
     $("#botao-cancelar").click(function(){
-        $("form").slideUp();
+        $("form").slideUp(100);
     });
 
     $("form").on("submit", function(e){
